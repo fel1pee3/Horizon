@@ -1,7 +1,11 @@
+import Header from "./pages/Header/Header.jsx"
+import Products from "./pages/contents/Products.jsx"
+
 export default function App() {
   return (
     <>
-      <h1>Horizon</h1>
+      <Header />
+      <Products />
     </>
   )
 }

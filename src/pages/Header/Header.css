@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+
+:root{
+    --cor1: #445EF2;
+    --cor2: #6B7FF2;
+    --cor3: #263973;
+    --cor4: #010E26;
+    --cor5: #05C7F2;
+    --white: #fff;
+    --black: #000;
+
+    --font-logo1: "Staatliches", sans-serif;
+    --font-logo2: "Bowlby One SC", sans-serif;
+    --font-normal: "Inter", sans-serif; 
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 10vh;
+    background-color: var(--cor3);
+}
+.logo{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-family: var(--font-logo1);
+    font-weight: 300;
+    font-size: 2.3em;
+    letter-spacing: 1px;
+    color: var(--white);
+}
+.search_bar{
+    display: flex;
+    align-items: center;
+    background-color: var(--white);
+    padding-right: 10px;
+}
+.search_input{
+    padding: 10px;
+    flex-grow: 1;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    margin-right: 10px;
+    font-size: 1em;
+}
+.search_button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    color: var(--cor3);
+    font-size: 1.1em;
+    transition: all .2s ease;
+}
+.search_button:hover{
+    transform: scale(1.1);
+}
+.cart_button{
+    background-color: transparent;
+    border: none;
+    font-size: 2.2em;
+    position: relative;
+    padding: 5px;
+    color: var(--white);
+}
+.cart-status{
+    color: var(--cor3);
+    background-color: rgb(255, 255, 255);
+    border: 1px solid var(--cor3);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: .4em;
+}
