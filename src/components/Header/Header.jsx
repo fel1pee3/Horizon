@@ -3,7 +3,7 @@ import React, {useState} from "react"
 import { GoSearch } from "react-icons/go";
 import { IoMdCart } from "react-icons/io";
 
-import "./Header.css"
+import "../../styles/Header.css"
 
 export default function Header(){
 
