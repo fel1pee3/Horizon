@@ -1,11 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import AxiosProducts from '../../api/AxiosProducts';
 import ProductCard from '../../components/ProductCard/ProductCard';
+import Loading from '../../components/Loading/Loading';
 
 import "../../styles/Products.css"
 
 function ProductSearch() {
   const [products, setProducts] = useState([]);
+  const [loading, setLoading] = useState(true)
 
   useEffect(() => {
 
@@ -16,6 +18,9 @@ function ProductSearch() {
       } catch (error) {
         console.error('DEU ERRO!!!!!!:', error);
       }
+
+      setLoading(false)
+
     };
 
     fetchProducts();
@@ -23,13 +28,19 @@ function ProductSearch() {
 
   return (
     <section className='container'>
-        
-      {products.map(e =>
-        <ProductCard
-          key={e.id} 
-          data={e} 
-        />
-      )} 
+
+      {loading ? (
+        <Loading />
+      ) : (
+        <div className='container'>
+          {products.map(e =>
+            <ProductCard
+              key={e.id}
+              data={e}
+            />
+          )}
+        </div>
+      )}
 
     </section>
   );

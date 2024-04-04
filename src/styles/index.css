@@ -22,3 +22,11 @@
     box-sizing: border-box;
     font-family: var(--font-normal);
 }
+
+body{
+    background-color: #e6e8ec;
+}
+
+.container-project{
+    background-color: #e6e8ec;
+}

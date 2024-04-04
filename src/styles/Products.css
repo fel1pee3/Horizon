@@ -1,7 +1,6 @@
 .container{
-    padding: 110px 20px 50px;
+    padding: 70px 20px 70px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    background-color: rgb(233, 233, 233);
 }
