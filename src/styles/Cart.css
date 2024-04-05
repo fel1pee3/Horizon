@@ -1,0 +1,23 @@
+.cart{
+    width: 100%;
+    max-width: 350px;
+    height: 100vh;
+    background-color: #e6e8ec;
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 100px 20px 20px;
+    box-shadow: -13px 13px 26px #b8b8b8,
+                13px -13px 26px #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transform: translate(100%, 0);
+    transition: all .4s ease;
+}
+.cart--active{
+    transform: translate(0, 0);
+}
+.value-price{
+    color: rgb(207, 0, 0);
+}

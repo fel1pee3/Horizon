@@ -1,13 +1,14 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect, useContext } from 'react';
 import AxiosProducts from '../../api/AxiosProducts';
 import ProductCard from '../../components/ProductCard/ProductCard';
 import Loading from '../../components/Loading/Loading';
+import Context from '../../Context/AppContext';
 
 import "../../styles/Products.css"
 
 function ProductSearch() {
-  const [products, setProducts] = useState([]);
-  const [loading, setLoading] = useState(true)
+  
+  const {products, setProducts, loading, setLoading} = useContext(Context)
 
   useEffect(() => {
 

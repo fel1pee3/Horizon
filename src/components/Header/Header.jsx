@@ -1,7 +1,6 @@
 import React from "react"
 import Search from "../Search/Search";
-
-import { IoMdCart } from "react-icons/io";
+import CartButton from "../cartbutton.jsx/CartButton";
 
 import "../../styles/Header.css"
 
@@ -13,10 +12,7 @@ export default function Header(){
 
             <Search />
 
-            <button className="cart_button">
-                <IoMdCart />
-                <span className="cart-status">0</span>
-            </button>
+            <CartButton/>
 
         </header>
     )
