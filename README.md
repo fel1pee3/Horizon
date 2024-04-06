@@ -1,5 +1,7 @@
 # React + Vite
 
+Horizon é um projeto criado utilizando React.js e suas tecnologias associadas, com o propósito de fornecer uma plataforma interativa para explorar os produtos disponíveis no Mercado Livre. A aplicação utiliza a API pública do Mercado Livre para obter informações atualizadas sobre uma ampla variedade de produtos.
+
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
 Currently, two official plugins are available:
