@@ -86,3 +86,42 @@
     left: 0;
     font-size: .4em;
 }
+
+@media screen and (max-width:720px) {
+    .logo{
+        font-size: 2em;
+    }
+    .search_input{
+        padding: 8px;
+        margin-right: 8px;
+        font-size: .8em;
+    }
+    .search_button{
+        font-size: 1em;
+    }
+    .cart-button{
+        font-size: 1.9em;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .logo{
+        font-size: 1.5em;
+    }
+    .search_input{
+        padding: 5px;
+        margin-right: 5px;
+        font-size: .6em;
+    }
+    .search_button{
+        font-size: .8em;
+    }
+    .cart-status{
+        width: 18px;
+        height: 18px;
+        font-size: .4em;
+    }
+    .cart-button{
+        font-size: 1.6em;
+    }
+}
