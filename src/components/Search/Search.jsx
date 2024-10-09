@@ -15,7 +15,6 @@ export default function Search(){
         evt.preventDefault()
         setLoading(true)
         
-
         const resultProducts = await AxiosProducts(searchValue)
         setProducts(resultProducts.results)
         setSearchValue("")
